@@ -12,22 +12,27 @@
     <title>Movie Tickets</title>
   </head>
   <body>
+
     <div class="container">
-      <h1>Movie Tickets</h1>
+
+      <div class="jumbotron">
+        <h1>Movie Tickets</h1>
+      </div>
+
 
       <div class="row">
         <div class="col-md-6">
-          <h2>Add a contact:</h2>
+          <h2>Choose your show below:</h2>
           <form id="mainForm">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name">
+              <input type="text" class="form-control" id="userName">
             </div>
 
             <div class="form-group">
-              <label for="movie-titles">Which movie would you like to Watch?</label>
+              <label for="movie-label">Which movie would you like to Watch?</label>
               <select class="form-control" id="movie-titles">
-                <option>Choose your movie...</option>
+                <option>Choose your time...</option>
                 <option>Mad Max</option>
                 <option>Avatar</option>
                 <option>La La Land</option>
@@ -35,7 +40,7 @@
             </div>
 
             <div class="form-group">
-              <label for="show-times">Show times:</label>
+              <label for="show-label">Show times:</label>
               <select class="form-control" id="show-times">
                 <option>Choose your movie...</option>
                 <option>10:00AM</option>
@@ -63,25 +68,21 @@
           </form>
 
           <h2>Ticket Details</h2>
-          <ul id="ticket-summary">
-
+          <ul class="ticket-summary">
+            <p>
+              Thank you, <span id="summary-sentence"></span>! Find your order details below:
+            </p>
+            <p>
+              Movie: <span id="movie-result"></span>
+            </p>
+            <p>
+              Show Time: <span id="show-time-result"></span>
+            </p>
+            <p>
+              Your price: <span id="price-result"></span>
+            </p>
           </ul>
         </div>
-
-        <!-- <div class="col-md-6">
-          <div id="show-contact">
-            <h2></h2>
-
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Addresses:</p>
-            <ul id="addresses">
-
-            </ul>
-          </div>
-        </div> -->
-      </div>
-
     </div>
   </body>
 </html>
