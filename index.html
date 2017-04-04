@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
-       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <title>Movie Tickets</title>
@@ -15,6 +15,72 @@
     <div class="container">
       <h1>Movie Tickets</h1>
 
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="mainForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+              <label for="movie-titles">Which movie would you like to Watch?</label>
+              <select class="form-control" id="movie-titles">
+                <option>Choose your movie...</option>
+                <option>Mad Max</option>
+                <option>Avatar</option>
+                <option>La La Land</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="show-times">Show times:</label>
+              <select class="form-control" id="show-times">
+                <option>Choose your movie...</option>
+                <option>10:00AM</option>
+                <option>11:00AM</option>
+                <option>12:00AM</option>
+                <option>1:00PM</option>
+                <option>2:00PM</option>
+                <option>3:00PM</option>
+                <option>4:00PM</option>
+                <option>5:00PM</option>
+                <option>6:00PM</option>
+                <option>7:00PM</option>
+                <option>8:00PM</option>
+                <option>9:00PM</option>
+                <option>10:00PM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age">
+            </div>
+
+            <button type="submit" class="btn btn-info">Check your Price!</button>
+          </form>
+
+          <h2>Ticket Details</h2>
+          <ul id="ticket-summary">
+
+          </ul>
+        </div>
+
+        <!-- <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div> -->
+      </div>
 
     </div>
   </body>
